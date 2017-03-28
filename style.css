@@ -1,11 +1,23 @@
-centering text
+.pink{
+  height: 20%;
+  width: 10%;
+  color: #85bc45;
+  background-color: blue;
+  border-radius: 15%;
+  font-family: Arial;
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+}
 
-# Please enter the commit message for your changes. Lines starting
-# with '#' will be ignored, and an empty message aborts the commit.
-# Explicit paths specified without -i or -o; assuming --only paths...
-# On branch master
-# Your branch is up-to-date with 'origin/master'.
-#
-# Changes to be committed:
-#	modified:   style.css
-#
+#textdec{
+  text-decoration: none;
+}
+
+h1, ul, p  {
+text-align: center;
+}
+
+#blue{
+  
+}
