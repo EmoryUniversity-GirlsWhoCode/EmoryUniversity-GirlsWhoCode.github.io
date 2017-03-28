@@ -7,17 +7,44 @@
   font-family: Arial;
   font-size: 2em;
   text-decoration: none;
-  text-align: center;
+  text-align: center;	
 }
 
 #textdec{
   text-decoration: none;
 }
 
-h1, ul, p  {
+div.pink {
+float: center;
+}
+
+h1 {
+text-align: left;
+}
+
+ul, p  {
 text-align: center;
 }
 
+.topnav {
+background-color: rgb(0,168,198);
+ overflow: hidden;
+text-align: center;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(174,226,57) ;
+    color: white;
+}
 #blue{
   
 }
