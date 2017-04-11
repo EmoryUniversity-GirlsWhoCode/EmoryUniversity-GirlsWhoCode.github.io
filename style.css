@@ -20,8 +20,17 @@ h1 {
 text-align: left;
 }
 
-ul, p  {
+h2 {
 text-align: center;
+}
+
+h1, h2, p, div, a {
+font-family: helvetica;
+}
+
+
+ul, p  {
+text-align: left;
 }
 
 .topnav {
