@@ -46,3 +46,29 @@ text-align: center;
 #blue{
   
 }
+
+.bigdiv{
+height: 800px;
+}
+.wordside{
+float:left;
+width:40%;
+}
+.mapside{
+float:right;
+width:60%;
+
+}
+.doncenter{
+font-family: Verdana;
+text-align: left;
+}
+.doncentertitle{
+font-weight: bold;
+}
+.specialword{
+color: red;
+}
+.doncenteritems{
+text-align:left;
+}
