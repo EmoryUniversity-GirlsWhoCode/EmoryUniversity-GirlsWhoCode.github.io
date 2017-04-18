@@ -14,8 +14,6 @@
   text-decoration: none;
 }
 
-
-
 h1 {
 text-align: left;
 }
@@ -28,6 +26,10 @@ h1, h2, p, div, a {
 font-family: helvetica;
 }
 
+.map {
+	padding-bottom: 25px;
+	padding-top: 
+}
 
 ul, p  {
 text-align: left;
