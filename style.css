@@ -1,6 +1,25 @@
+ * {fd
+	border:1px solid rgba(0,0,0,0.3);
+}
+
+body {
+	font-size:100%;
+	font-family: helvetica;
+}
+
+#gwc {
+	float:left;
+}
 
 #textdec{
   text-decoration: none;
+}
+
+
+#website-name {
+	display:inline-block;
+	float:left;
+	padding: 1em 0.75em 0em;
 }
 
 h1 {
@@ -9,10 +28,6 @@ text-align: left;
 
 h2 {
 text-align: center;
-}
-
-h1, h2, p, div, a {
-font-family: helvetica;
 }
 
 .map {
@@ -29,10 +44,43 @@ text-align: center;
 color: rgb(0,168,198)
 }
 
+nav > ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0,168,198);
+	clear:both;
+	border-radius:5px;
+}
+
+nav li {
+	float:left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	border-radius:5px;
+}
+
+nav li a:hover {
+    background-color: rgb(174,226,57);
+}
+
+nav li a.active {
+	background-color:blue;
+}
+
+/*
 .topnav {
-background-color: rgb(0,168,198);
+background-color: ;
  overflow: hidden;
 text-align: center;
+clear:both;
 }
 
 .topnav a {
@@ -45,13 +93,10 @@ text-align: center;
 }
 
 .topnav a:hover {
-    background-color: rgb(174,226,57) ;
+    background-color:  ;
     color: white;
 }
-#blue{
-  
-}
-
+*/
 .bigdiv{
 height: 800px;
 }
@@ -71,6 +116,8 @@ text-align: left;
 .doncentertitle{
 font-weight: bold;
 }
+
+/*for donationlist*/
 .specialword{
 color: red;
 }
