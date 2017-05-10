@@ -1,28 +1,133 @@
- * {fd
-	border:1px solid rgba(0,0,0,0.3);
+* {
+	/*border:1px solid rgba(0,0,0,0.3);*/
+	box-sizing:border-box;
 }
 
 body {
 	font-size:100%;
-	font-family: helvetica;
+	font-family: "Julius Sans One", Syncopate, "Amatic SC", "Unica One", Crushed, Codystar, helvetica;
+	background-image: url("wood_1.png");/*carbon_fibre.png*/
 }
 
 #gwc {
 	float:left;
 }
 
-#textdec{
-  text-decoration: none;
-}
-
-
 #website-name {
 	display:inline-block;
 	float:left;
 	padding: 1em 0.75em 0em;
+	color: white;
 }
 
-h1 {
+ /*for website name*/
+ .rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family:Codystar;
+}
+
+/*nav*/
+
+nav > ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0,168,198);/*blue*/
+	clear:both;
+	border-radius:1em;
+	height:2.7em;
+	width:100%;
+	/*border:2px double white;*/
+}
+
+nav li {
+	float:left;
+	height:2.7em;
+}
+
+nav li a:hover {
+    background-color: rgb(174,226,57);/*greenish*/
+	box-shadow:0 5px 15px rgba(174,226,57,0.3);
+	z-index:1;
+	
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:0.875em 1em;
+    text-decoration: none;
+    border-right: 1px solid #bbb;
+	height:2.7em;
+    transition: all 0.2s ease-in-out;
+}
+
+nav li:last-child {
+	float:right;
+	background-color:#e59400/*orange or white --> #333*/;
+	border-radius:0 1em 1em 0;
+}
+
+nav li:last-child a{
+	border-right: none;
+    border-left:1px solid #bbb;
+    padding:0;
+    border-radius:0 1em 1em 0;
+}
+
+nav li:last-child a i {
+	font-size:2.7em;
+	padding:0;
+}
+
+nav li a.active {
+	background-color:blue;
+	border-radius:1em 0 0 1em;
+}
+
+nav li a:first-child:hover.active {
+	box-shadow:0 5px 15px rgba(0,0,255,0.3);
+}
+
+/*stuff in body*/
+
+.content {
+	width: 90%;
+	max-height:100%;
+	background-color:white;
+	margin:3em auto;
+	border:1px double white;
+	border-radius:1em;
+	padding:20px;
+	clear:both;
+	min-height:100%;
+}
+
+ p {
+	 font-family:"Pathway Gothic One";
+	 font-size:1.25em;
+	 font-weight:1px;
+	 color: rgb(0,168,198);
+ }
+ 
+.map {
+	 text-align:center;
+	 margin:2em auto;
+	 border-radius:1em;
+ }
+ 
+ iframe {
+	 border:1em double white;
+	 border-radius:1em;
+ }
+ 
+ /*idk*/
+h1, ul {
 text-align: left;
 }
 
@@ -30,97 +135,75 @@ h2 {
 text-align: center;
 }
 
-.map {
-	padding-bottom: 25px;
-	padding-top: 25px;
+p a:link {
+	color:rgb(174,226,57);
+	text-decoration:none;
 }
 
-ul, {
-text-align: left;
+p a:visited {
+	color:rgb(174,226,57);
 }
 
-p {
-text-align: center;
-color: rgb(0,168,198)
+p a:hover {
+	text-decoration:underline;
 }
 
-nav > ul {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(0,168,198);
-	clear:both;
-	border-radius:5px;
+p a:active {
+	color:white;
 }
 
-nav li {
-	float:left;
+.bigdiv {
+max-height: 100%;
+padding:0;
+margin:0;
 }
 
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-	border-radius:5px;
-}
-
-nav li a:hover {
-    background-color: rgb(174,226,57);
-}
-
-nav li a.active {
-	background-color:blue;
-}
-
-/*
-.topnav {
-background-color: ;
- overflow: hidden;
-text-align: center;
-clear:both;
-}
-
-.topnav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color:  ;
-    color: white;
-}
-*/
-.bigdiv{
-height: 800px;
-}
 .wordside{
 float:left;
 width:40%;
+overflow:auto;
+max-height:450px;
 }
+
+.giving {
+	background-color:white;
+	color:black;
+	max-height:100px;
+	padding-top:0;
+	position:absolute;
+	width:40%;
+	overflow:auto;
+	float:left;
+}
+
+div > .quicklinks {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+.quicklinks > li {
+	display:inline;
+}
+
 .mapside{
 float:right;
 width:60%;
-
 }
+
 .doncenter{
-font-family: Verdana;
 text-align: left;
 }
+
 .doncentertitle{
 font-weight: bold;
 }
 
 /*for donationlist*/
-.specialword{
-color: red;
+.specialword, ul{
+color: white;
 }
+
 .doncenteritems{
 text-align:left;
 }
